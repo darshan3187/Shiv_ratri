@@ -565,9 +565,9 @@ export default function App() {
                                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-shiva-deep" />
 
                                 <div className="absolute bottom-6 md:bottom-10 left-6 md:left-10 p-2 space-y-2 md:space-y-4">
-                                    <span className="text-shiva-gold font-hindi text-2xl md:text-3xl block">{jy.hindi}</span>
-                                    <h3 className="font-cinzel text-xl md:text-2xl text-white font-bold">{jy.name}</h3>
-                                    <p className="text-white/50 text-xs md:text-sm italic pr-6 md:pr-10">{jy.importance}</p>
+                                    <span className="text-shiva-gold font-hindi text-xl sm:text-2xl md:text-3xl block">{jy.hindi}</span>
+                                    <h3 className="font-cinzel text-lg sm:text-xl md:text-2xl text-white font-bold">{jy.name}</h3>
+                                    <p className="text-white/50 text-xs md:text-sm italic pr-4 md:pr-10">{jy.importance}</p>
                                 </div>
                                 <span className="absolute top-6 md:top-8 right-6 md:right-8 font-cinzel text-5xl md:text-7xl opacity-5 text-shiva-gold pointer-events-none">{jy.id}</span>
                             </motion.div>
@@ -589,7 +589,7 @@ export default function App() {
                         <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-shiva-gold/5 blur-[100px]" />
 
                         <motion.h3
-                            className="font-hindi text-5xl lg:text-6xl text-white mb-8"
+                            className="font-hindi text-3xl sm:text-5xl lg:text-6xl text-white mb-8"
                             animate={{
                                 textShadow: [
                                     "0 0 20px rgba(255,215,0,0.3)",
@@ -602,12 +602,12 @@ export default function App() {
                             हर हर महादेव
                         </motion.h3>
 
-                        <p className="font-hindi text-2xl text-white/70 mb-12 leading-relaxed">
+                        <p className="font-hindi text-lg sm:text-2xl text-white/70 mb-8 md:mb-12 leading-relaxed">
                             शिव भक्तों के लिए विशेष आशीर्वाद
                         </p>
 
                         {/* Interactive Trishul and Bell */}
-                        <div className="flex items-center justify-center gap-12 mb-16">
+                        <div className="flex items-center justify-center gap-4 sm:gap-8 md:gap-12 mb-12 md:mb-16">
                             {/* Trishul */}
                             <motion.div
                                 whileHover={{ scale: 1.2, rotate: 360 }}
@@ -615,7 +615,7 @@ export default function App() {
                                 transition={{ type: "spring", stiffness: 260, damping: 20 }}
                                 className="cursor-pointer"
                             >
-                                <div className="text-8xl">🔱</div>
+                                <div className="text-5xl sm:text-6xl md:text-8xl">🔱</div>
                             </motion.div>
 
                             {/* Bell */}
@@ -630,9 +630,9 @@ export default function App() {
                                         setTimeout(() => blessing.classList.add('hidden'), 5000);
                                     }
                                 }}
-                                className="relative z-10 w-32 h-32 rounded-full bg-gradient-to-tr from-shiva-gold to-orange-500 flex items-center justify-center shadow-[0_0_50px_rgba(255,215,0,0.3)] group"
+                                className="relative z-10 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-tr from-shiva-gold to-orange-500 flex items-center justify-center shadow-[0_0_50px_rgba(255,215,0,0.3)] group"
                             >
-                                <Bell size={48} className="text-shiva-deep group-hover:animate-swing" />
+                                <Bell className="text-shiva-deep group-hover:animate-swing w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
                             </motion.button>
 
                             {/* Damaru */}
@@ -642,7 +642,7 @@ export default function App() {
                                 transition={{ type: "spring", stiffness: 260, damping: 20 }}
                                 className="cursor-pointer"
                             >
-                                <div className="text-8xl">🥁</div>
+                                <div className="text-5xl sm:text-6xl md:text-8xl">🥁</div>
                             </motion.div>
                         </div>
 
@@ -653,8 +653,8 @@ export default function App() {
                             animate={{ opacity: 1, y: 0 }}
                             className="hidden mb-12 p-8 bg-shiva-gold/10 rounded-3xl border border-shiva-gold/30"
                         >
-                            <p className="font-hindi text-3xl text-shiva-gold mb-4">🕉️ शिव का आशीर्वाद 🕉️</p>
-                            <p className="font-hindi text-xl text-white/90 leading-relaxed">
+                            <p className="font-hindi text-xl sm:text-3xl text-shiva-gold mb-4">🕉️ शिव का आशीर्वाद 🕉️</p>
+                            <p className="font-hindi text-base sm:text-xl text-white/90 leading-relaxed">
                                 भगवान शिव आपको और आपके परिवार को सुख, समृद्धि और शांति प्रदान करें।<br />
                                 आपकी सभी मनोकामनाएं पूर्ण हों। हर हर महादेव!
                             </p>
@@ -664,7 +664,7 @@ export default function App() {
                         <div className="mb-12 p-6 bg-white/5 rounded-2xl backdrop-blur-sm">
                             <p className="font-cinzel text-sm text-white/40 uppercase tracking-widest mb-2">Devotees Worldwide</p>
                             <motion.p
-                                className="font-cinzel text-4xl text-shiva-gold font-bold"
+                                className="font-cinzel text-2xl sm:text-3xl md:text-4xl text-shiva-gold font-bold"
                                 animate={{
                                     scale: [1, 1.05, 1],
                                 }}
@@ -676,7 +676,7 @@ export default function App() {
 
                         {/* Special Message for Devotees */}
                         <div className="space-y-6 border-t border-white/10 pt-12">
-                            <p className="font-hindi text-2xl text-white/80 leading-relaxed">
+                            <p className="font-hindi text-lg sm:text-xl md:text-2xl text-white/80 leading-relaxed">
                                 "जो भी इस पवित्र यात्रा में शामिल हुआ है,<br />
                                 महादेव की कृपा सदा उस पर बनी रहे।"
                             </p>
@@ -686,7 +686,7 @@ export default function App() {
                         </div>
 
                         <div className="mt-16 pt-8 border-t border-white/5">
-                            <p className="font-cinzel text-xs tracking-[1rem] opacity-20 text-white uppercase">
+                            <p className="font-cinzel text-xs tracking-[0.2rem] sm:tracking-[0.5rem] md:tracking-[1rem] opacity-20 text-white uppercase">
                                 Divine Unity • Mahashivratri 2026
                             </p>
                         </div>
