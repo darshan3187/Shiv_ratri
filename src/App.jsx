@@ -99,7 +99,7 @@ function StotramLyrics() {
     }, []);
 
     return (
-        <div className="font-hindi text-2xl lg:text-3xl leading-loose space-y-6">
+        <div className="font-hindi text-xl md:text-2xl lg:text-3xl leading-loose space-y-6">
             {lyrics.map((line, idx) => (
                 <motion.p
                     key={idx}
@@ -136,7 +136,7 @@ const Jyotirlingas = [
         hindi: "सोमनाथ",
         loc: "Saurashtra, Gujarat",
         importance: "यह १२ ज्योतिर्लिंगों में प्रथम है। इसका निर्माण स्वयं चंद्रमा ने किया था।",
-        img: "./public/somnath.jpg"
+        img: "/somnath.jpg"
     },
     {
         id: "02",
@@ -144,7 +144,7 @@ const Jyotirlingas = [
         hindi: "मल्लिकार्जुन",
         loc: "Srisailam, Andhra Pradesh",
         importance: "इसे 'दक्षिण के कैलाश' के रूप में जाना जाता है। शिव-शक्ति का साक्षात वास।",
-        img: "./public/Mallikarjuna.jpg"
+        img: "/Mallikarjuna.jpg"
     },
     {
         id: "03",
@@ -152,7 +152,7 @@ const Jyotirlingas = [
         hindi: "महाकालेश्वर",
         loc: "Ujjain, Madhya Pradesh",
         importance: "एकमात्र दक्षिणमुखी ज्योतिर्लिंग, जो काल के अधिपति हैं।",
-        img: "./public/Mahakaleshwar.jpg"
+        img: "/Mahakaleshwar.jpg"
     },
     {
         id: "04",
@@ -160,7 +160,7 @@ const Jyotirlingas = [
         hindi: "ओंकारेश्वर",
         loc: "Khandwa, Madhya Pradesh",
         importance: "नर्मदा नदी के बीच स्थित द्वीप जो प्राकृतिक 'ॐ' के आकार का है।",
-        img: "./public/Omkareshwar.jpg"
+        img: "/Omkareshwar.jpg"
     },
     {
         id: "05",
@@ -168,7 +168,7 @@ const Jyotirlingas = [
         hindi: "केदारनाथ",
         loc: "Rudraprayag, Uttarakhand",
         importance: "हिमालय की गोद में स्थित, यह मंदिर मोक्ष का परम द्वार है।",
-        img: "./public/Kedarnath.jpg"
+        img: "/Kedarnath.jpg"
     },
     {
         id: "06",
@@ -176,7 +176,7 @@ const Jyotirlingas = [
         hindi: "भीमाशंकर",
         loc: "Pune, Maharashtra",
         importance: "भीमा नदी का उद्गम स्थल और महादेव की असुर-विनाशिनी शक्ति का प्रतीक।",
-        img: "./public/Bhimashankar.jpg"
+        img: "/Bhimashankar.jpg"
     },
     {
         id: "07",
@@ -184,7 +184,7 @@ const Jyotirlingas = [
         hindi: "काशी विश्वनाथ",
         loc: "Varanasi, Uttar Pradesh",
         importance: "ब्रह्मांड की सबसे प्राचीन नगरी काशी, जो शिव के त्रिशूल पर विराजमान है।",
-        img: "./public/KashiVishwanath.jpg"
+        img: "/KashiVishwanath.jpg"
     },
     {
         id: "08",
@@ -192,7 +192,7 @@ const Jyotirlingas = [
         hindi: "त्र्यंबकेश्वर",
         loc: "Nashik, Maharashtra",
         importance: "यहाँ लिंग के भीतर ब्रह्मा, विष्णु और महेश तीनों का वास है।",
-        img: "./public/Trimbakeshwar.jpg"
+        img: "/Trimbakeshwar.jpg"
     },
     {
         id: "09",
@@ -200,7 +200,7 @@ const Jyotirlingas = [
         hindi: "वैद्यनाथ",
         loc: "Deoghar, Jharkhand",
         importance: "रावण द्वारा स्थापित, यह रोगों को नष्ट करने वाले देव का धाम है।",
-        img: "./public/Vaidyanath.jpg"
+        img: "/Vaidyanath.jpg"
     },
     {
         id: "10",
@@ -208,7 +208,7 @@ const Jyotirlingas = [
         hindi: "नागेश्वर",
         loc: "Dwarka, Gujarat",
         importance: "दुष्टों का नाश करने वाले नागों के स्वामी का पवित्र स्थान।",
-        img: "./public/Nageshwar.jpg"
+        img: "/Nageshwar.jpg"
     },
     {
         id: "11",
@@ -216,7 +216,7 @@ const Jyotirlingas = [
         hindi: "रामेश्वरम",
         loc: "Tamil Nadu",
         importance: "भगवान राम द्वारा स्थापित, जहाँ उन्होंने रावण विजय का आशीर्वाद लिया।",
-        img: "./public/Rameshware.jpg"
+        img: "/Rameshware.jpg"
     },
     {
         id: "12",
@@ -224,7 +224,7 @@ const Jyotirlingas = [
         hindi: "घृष्णेश्वर",
         loc: "Aurangabad, Maharashtra",
         importance: "बारहवां ज्योतिर्लिंग, जो श्रद्धा और क्षमा का अनुपम प्रतीक है।",
-        img: "./public/Grishneshwar.jpg"
+        img: "/Grishneshwar.jpg"
     }
 ]
 
@@ -372,7 +372,7 @@ export default function App() {
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
                     >
-                        <h1 className="font-hindi text-[5rem] sm:text-[7rem] md:text-[10rem] lg:text-[12rem] xl:text-[15rem] leading-none text-gold-gradient drop-shadow-2xl">
+                        <h1 className="font-hindi text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[12rem] xl:text-[15rem] leading-none text-gold-gradient drop-shadow-2xl">
                             शिव
                         </h1>
                     </motion.div>
@@ -559,7 +559,7 @@ export default function App() {
                                 key={jy.id}
                                 whileHover={{ y: -15, rotateX: 5, rotateY: 5 }}
                                 transition={{ type: "spring", stiffness: 300 }}
-                                className="group relative h-[400px] sm:h-[450px] md:h-[500px] glass-panel rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-white/5 hover:border-shiva-gold/30 transition-colors"
+                                className="group relative h-[350px] sm:h-[450px] md:h-[500px] glass-panel rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-white/5 hover:border-shiva-gold/30 transition-colors"
                             >
                                 <img src={jy.img} className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-40" />
                                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-shiva-deep" />
@@ -584,7 +584,7 @@ export default function App() {
                     transition={{ duration: 1 }}
                     className="max-w-4xl mx-auto px-6"
                 >
-                    <div className="glass-panel p-16 lg:p-24 rounded-[4rem] text-center border-shiva-gold/10 shadow-[0_0_100px_rgba(255,215,0,0.05)] relative overflow-hidden">
+                    <div className="glass-panel p-8 md:p-16 lg:p-24 rounded-[2rem] md:rounded-[4rem] text-center border-shiva-gold/10 shadow-[0_0_100px_rgba(255,215,0,0.05)] relative overflow-hidden">
                         <div className="absolute -top-20 -left-20 w-64 h-64 bg-shiva-gold/5 blur-[100px]" />
                         <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-shiva-gold/5 blur-[100px]" />
 
@@ -705,7 +705,7 @@ export default function App() {
                         audio.pause();
                     }
                 }}
-                className="fixed bottom-12 right-12 z-50 w-16 h-16 rounded-full glass-panel border border-shiva-gold/20 flex items-center justify-center text-shiva-gold shadow-2xl hover:border-shiva-gold/40 transition-all"
+                className="fixed bottom-6 right-6 md:bottom-12 md:right-12 z-50 w-12 h-12 md:w-16 md:h-16 rounded-full glass-panel border border-shiva-gold/20 flex items-center justify-center text-shiva-gold shadow-2xl hover:border-shiva-gold/40 transition-all"
             >
                 {isPlaying ? <VolumeX size={24} /> : <Volume2 size={24} />}
             </motion.button>
