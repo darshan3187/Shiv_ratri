@@ -275,7 +275,9 @@ export default function App() {
 
     return (
         <div className="min-h-screen bg-shiva-deep selection:bg-shiva-gold selection:text-shiva-deep relative">
-            <CursorFollower />
+            <div className="hidden md:block">
+                <CursorFollower />
+            </div>
 
             {/* Floating Om Particles */}
             <div className="fixed inset-0 pointer-events-none z-[100] overflow-hidden">
@@ -372,7 +374,7 @@ export default function App() {
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
                     >
-                        <h1 className="font-hindi text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[12rem] xl:text-[15rem] leading-none text-gold-gradient drop-shadow-2xl">
+                        <h1 className="font-hindi text-[18vw] sm:text-[7rem] md:text-[10rem] lg:text-[12rem] xl:text-[15rem] leading-none text-gold-gradient drop-shadow-2xl">
                             शिव
                         </h1>
                     </motion.div>
@@ -411,7 +413,7 @@ export default function App() {
                                         animate={{ scale: 1, opacity: 1 }}
                                         exit={{ scale: 1.1, opacity: 0 }}
                                         transition={{ duration: 1.2 }}
-                                        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+                                        className="w-full h-[250px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
                                     />
                                 </AnimatePresence>
                                 <div className="absolute inset-0 bg-gradient-to-t from-shiva-deep via-transparent to-transparent" />
@@ -467,7 +469,7 @@ export default function App() {
                     <motion.div
                         animate={{ x: ["0%", "-50%"] }}
                         transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-                        className="flex gap-10 md:gap-20 text-[3rem] sm:text-[4rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] font-hindi text-white/5 uppercase tracking-tighter"
+                        className="flex gap-4 md:gap-20 text-[12vw] sm:text-[4rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] font-hindi text-white/5 uppercase tracking-tighter"
                     >
                         <span>ॐ नमः शिवाय</span>
                         <span>हर हर महादेव</span>
@@ -584,7 +586,7 @@ export default function App() {
                     transition={{ duration: 1 }}
                     className="max-w-4xl mx-auto px-6"
                 >
-                    <div className="glass-panel p-8 md:p-16 lg:p-24 rounded-[2rem] md:rounded-[4rem] text-center border-shiva-gold/10 shadow-[0_0_100px_rgba(255,215,0,0.05)] relative overflow-hidden">
+                    <div className="glass-panel p-6 sm:p-8 md:p-16 lg:p-24 rounded-[2rem] md:rounded-[4rem] text-center border-shiva-gold/10 shadow-[0_0_100px_rgba(255,215,0,0.05)] relative overflow-hidden">
                         <div className="absolute -top-20 -left-20 w-64 h-64 bg-shiva-gold/5 blur-[100px]" />
                         <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-shiva-gold/5 blur-[100px]" />
 
@@ -607,7 +609,7 @@ export default function App() {
                         </p>
 
                         {/* Interactive Trishul and Bell */}
-                        <div className="flex items-center justify-center gap-4 sm:gap-8 md:gap-12 mb-12 md:mb-16">
+                        <div className="flex items-center justify-center gap-3 sm:gap-8 md:gap-12 mb-12 md:mb-16">
                             {/* Trishul */}
                             <motion.div
                                 whileHover={{ scale: 1.2, rotate: 360 }}
@@ -615,7 +617,7 @@ export default function App() {
                                 transition={{ type: "spring", stiffness: 260, damping: 20 }}
                                 className="cursor-pointer"
                             >
-                                <div className="text-5xl sm:text-6xl md:text-8xl">🔱</div>
+                                <div className="text-4xl xs:text-5xl sm:text-6xl md:text-8xl">🔱</div>
                             </motion.div>
 
                             {/* Bell */}
@@ -630,9 +632,9 @@ export default function App() {
                                         setTimeout(() => blessing.classList.add('hidden'), 5000);
                                     }
                                 }}
-                                className="relative z-10 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-tr from-shiva-gold to-orange-500 flex items-center justify-center shadow-[0_0_50px_rgba(255,215,0,0.3)] group"
+                                className="relative z-10 w-16 h-16 xs:w-20 xs:h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-tr from-shiva-gold to-orange-500 flex items-center justify-center shadow-[0_0_50px_rgba(255,215,0,0.3)] group"
                             >
-                                <Bell className="text-shiva-deep group-hover:animate-swing w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
+                                <Bell className="text-shiva-deep group-hover:animate-swing w-6 h-6 xs:w-8 xs:h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
                             </motion.button>
 
                             {/* Damaru */}
@@ -642,7 +644,7 @@ export default function App() {
                                 transition={{ type: "spring", stiffness: 260, damping: 20 }}
                                 className="cursor-pointer"
                             >
-                                <div className="text-5xl sm:text-6xl md:text-8xl">🥁</div>
+                                <div className="text-4xl xs:text-5xl sm:text-6xl md:text-8xl">🥁</div>
                             </motion.div>
                         </div>
 
