@@ -1,10 +1,83 @@
-node_modules
+# Dependencies
+node_modules/
+.pnpm
+.pnpm-lock.yaml
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.pnp.*
+
+# Build outputs
+build/
+dist/
+out/
+.next/
+.vercel/
+.netlify/
+.vite/
+
+# React-specific
 .env
 .env.local
-.env.example
-.env.test
-.env.development
-.env.production
-.env.test.local
 .env.development.local
+.env.test.local
 .env.production.local
+
+# Testing
+coverage/
+*.lcov
+.jest/
+.nyc_output/
+.storybook/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+.ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Logs
+logs/
+*.log
+
+# Optional directories
+.cache/
+tmp/
+temp/
+.webpack/
+.parcel-cache/
+.rollup.cache/
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.stylelintcache/
+.node_repl_history/
+.tgz
+
+# TypeScript
+*.tsbuildinfo
+
+# Storybook
+storybook-static/
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+
+# Serverless
+.serverless/
+.dynamodb/
+.tern-port
+.vscode-test   
