@@ -3,7 +3,7 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls, Stars, Float, MeshDistortMaterial, Sparkles, PerspectiveCamera } from '@react-three/drei'
 import { motion, AnimatePresence, useScroll, useSpring, useTransform } from 'framer-motion'
 import { ChevronRight, ChevronLeft, Bell, Volume2, VolumeX, ArrowDownCircle } from 'lucide-react'
-
+import { Analytics } from "@vercel/analytics/react"
 // --- Custom Components ---
 
 function CursorFollower() {
@@ -100,6 +100,7 @@ function StotramLyrics() {
 
     return (
         <div className="font-hindi text-xl md:text-2xl lg:text-3xl leading-loose space-y-6">
+            <Analytics />
             {lyrics.map((line, idx) => (
                 <motion.p
                     key={idx}
