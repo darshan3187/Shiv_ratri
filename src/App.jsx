@@ -562,7 +562,7 @@ export default function App() {
                                 transition={{ type: "spring", stiffness: 300 }}
                                 className="group relative h-[350px] sm:h-[450px] md:h-[500px] glass-panel rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-white/5 hover:border-shiva-gold/30 transition-colors"
                             >
-                                <img src={jy.img} className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-40" />
+                                <img src={jy.img} loading='lazy' alt={jy.name + " - " + jy.id} className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-40" />
                                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-shiva-deep" />
 
                                 <div className="absolute bottom-6 md:bottom-10 left-6 md:left-10 p-2 space-y-2 md:space-y-4">
