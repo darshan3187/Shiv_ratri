@@ -244,6 +244,8 @@ const StorySteps = [
     }
 ]
 
+const isMobile = window.innerWidth < 768;
+
 // --- Main App ---
 
 export default function App() {
@@ -340,6 +342,7 @@ export default function App() {
             </AnimatePresence>
 
             {/* 3D Background */}
+            {!isMobile &&
             <div className="fixed inset-0 z-0">
                 <Canvas shadow={true}>
                     <PerspectiveCamera makeDefault position={[0, 0, 5]} />
@@ -352,7 +355,7 @@ export default function App() {
                     </Suspense>
                     <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.5} />
                 </Canvas>
-            </div>
+            </div>}
 
             {/* Hero Section - Fully Responsive */}
             <section className="relative min-h-screen flex flex-col items-center justify-center z-10 text-center overflow-hidden px-4">
