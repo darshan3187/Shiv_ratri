@@ -135,7 +135,7 @@ const Jyotirlingas = [
         hindi: "सोमनाथ",
         loc: "Saurashtra, Gujarat",
         importance: "यह १२ ज्योतिर्लिंगों में प्रथम है। इसका निर्माण स्वयं चंद्रमा ने किया था।",
-        img: "/somnath.jpg"
+        img: "/somnath.webp"
     },
     {
         id: "02",
@@ -143,7 +143,7 @@ const Jyotirlingas = [
         hindi: "मल्लिकार्जुन",
         loc: "Srisailam, Andhra Pradesh",
         importance: "इसे 'दक्षिण के कैलाश' के रूप में जाना जाता है। शिव-शक्ति का साक्षात वास।",
-        img: "/Mallikarjuna.jpg"
+        img: "/Mallikarjuna.webp"
     },
     {
         id: "03",
@@ -151,7 +151,7 @@ const Jyotirlingas = [
         hindi: "महाकालेश्वर",
         loc: "Ujjain, Madhya Pradesh",
         importance: "एकमात्र दक्षिणमुखी ज्योतिर्लिंग, जो काल के अधिपति हैं।",
-        img: "/Mahakaleshwar.jpg"
+        img: "/Mahakaleshwar.webp"
     },
     {
         id: "04",
@@ -159,7 +159,7 @@ const Jyotirlingas = [
         hindi: "ओंकारेश्वर",
         loc: "Khandwa, Madhya Pradesh",
         importance: "नर्मदा नदी के बीच स्थित द्वीप जो प्राकृतिक 'ॐ' के आकार का है।",
-        img: "/Omkareshwar.jpg"
+        img: "/Omkareshwar.webp"
     },
     {
         id: "05",
@@ -167,7 +167,7 @@ const Jyotirlingas = [
         hindi: "केदारनाथ",
         loc: "Rudraprayag, Uttarakhand",
         importance: "हिमालय की गोद में स्थित, यह मंदिर मोक्ष का परम द्वार है।",
-        img: "/Kedarnath.jpg"
+        img: "/Kedarnath.webp"
     },
     {
         id: "06",
@@ -175,7 +175,7 @@ const Jyotirlingas = [
         hindi: "भीमाशंकर",
         loc: "Pune, Maharashtra",
         importance: "भीमा नदी का उद्गम स्थल और महादेव की असुर-विनाशिनी शक्ति का प्रतीक।",
-        img: "/Bhimashankar.jpg"
+        img: "/Bhimashankar.webp"
     },
     {
         id: "07",
@@ -183,7 +183,7 @@ const Jyotirlingas = [
         hindi: "काशी विश्वनाथ",
         loc: "Varanasi, Uttar Pradesh",
         importance: "ब्रह्मांड की सबसे प्राचीन नगरी काशी, जो शिव के त्रिशूल पर विराजमान है।",
-        img: "/KashiVishwanath.jpg"
+        img: "/KashiVishwanath.webp"
     },
     {
         id: "08",
@@ -191,7 +191,7 @@ const Jyotirlingas = [
         hindi: "त्र्यंबकेश्वर",
         loc: "Nashik, Maharashtra",
         importance: "यहाँ लिंग के भीतर ब्रह्मा, विष्णु और महेश तीनों का वास है।",
-        img: "/Trimbakeshwar.jpg"
+        img: "/Trimbakeshwar.webp"
     },
     {
         id: "09",
@@ -199,7 +199,7 @@ const Jyotirlingas = [
         hindi: "वैद्यनाथ",
         loc: "Deoghar, Jharkhand",
         importance: "रावण द्वारा स्थापित, यह रोगों को नष्ट करने वाले देव का धाम है।",
-        img: "/Vaidyanath.jpg"
+        img: "/Vaidyanath.webp"
     },
     {
         id: "10",
@@ -207,7 +207,7 @@ const Jyotirlingas = [
         hindi: "नागेश्वर",
         loc: "Dwarka, Gujarat",
         importance: "दुष्टों का नाश करने वाले नागों के स्वामी का पवित्र स्थान।",
-        img: "/Nageshwar.jpg"
+        img: "/Nageshwar.webp"
     },
     {
         id: "11",
@@ -215,7 +215,7 @@ const Jyotirlingas = [
         hindi: "रामेश्वरम",
         loc: "Tamil Nadu",
         importance: "भगवान राम द्वारा स्थापित, जहाँ उन्होंने रावण विजय का आशीर्वाद लिया।",
-        img: "/Rameshware.jpg"
+        img: "/Rameshware.webp"
     },
     {
         id: "12",
@@ -223,7 +223,7 @@ const Jyotirlingas = [
         hindi: "घृष्णेश्वर",
         loc: "Aurangabad, Maharashtra",
         importance: "बारहवां ज्योतिर्लिंग, जो श्रद्धा और क्षमा का अनुपम प्रतीक है।",
-        img: "/Grishneshwar.jpg"
+        img: "/Grishneshwar.webp"
     }
 ]
 
