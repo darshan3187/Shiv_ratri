@@ -348,7 +348,7 @@ export default function App() {
                     <PerspectiveCamera makeDefault position={[0, 0, 5]} />
                     <ambientLight intensity={0.4} />
                     <pointLight position={[10, 10, 10]} intensity={1.5} color="#FFD700" />
-                    <Stars radius={100} depth={50} count={1600} factor={4} saturation={0} fade speed={1} />
+                    <Stars radius={100} depth={50} count={6000} factor={4} saturation={0} fade speed={1} />
                     <Sparkles count={100} scale={10} size={2} color="#FFD700" opacity={0.5} />
                     <Suspense fallback={null}>
                         <CosmicShiva />
